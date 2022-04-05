@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Prize/title>
+        <style>
+            body {
+                position: fixed;
+                font-family: arial;
+                background-color: rgb(250, 250, 250);
+            }
+            .center {
+                text-align: center;
+            }
+            a {
+                color: rgb(0, 200, 0);
+            }
+            button {
+                width: 20%;
+                height: 40px;
+                color: rgb(0, 0, 0);
+                background-color: rgb(230, 230, 230);
+                border: none;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick = "darkMode()">Dark Mode</button>
+        <h1 class = "center" id = "d">Prize</h1>
+        <hr>
+        <p id = "d2">
+            Hello there Connect 4 Champion. Welcome to the prize website. I have created this Website so that no one other then the Champion can go here. This was made in a short time span because of the Prize so please do not complain about the Graphics.
+            <br>
+            <hr>
+            <p class = "center">
+            <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click to Redeem Prize!!</a>
+            </p>
+        </p>
+        <script>
+            var darkmode = false;
+            function darkMode() {
+                darkmode = !darkmode;
+                if(darkmode) {
+                    document.getElementById("d").style = "color: rgb(255, 255, 255);";
+                    document.getElementById("d2").style = "color: rgb(255, 255, 255);";
+                    document.body.style = "position: fixed; font-family: arial; background-color: rgb(0, 0, 0);";
+                    document.button.style = "width: 20%; height: 40px; color: rgb(255, 255, 255); background-color: rgb(50, 50, 50); border: none; border-radius: 5px;"
+                } else {
+                    document.getElementById("d").style = "color: rgb(0, 0, 0);";
+                    document.getElementById("d2").style = "color: rgb(0, 0, 0);";
+                    document.body.style = "position: fixed; font-family: arial; background-color: rgb(250, 250, 250);";
+                    document.button.style = "width: 20%; height: 40px; color: rgb(0, 0, 0); background-color: rgb(230, 230, 230); border: none; border-radius: 5px;"
+                }
+            };
+        </script>
+    </body>
+</html>
